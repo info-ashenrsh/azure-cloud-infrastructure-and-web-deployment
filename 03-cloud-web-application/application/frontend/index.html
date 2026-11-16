@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CloudTask — Azure learning project</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <p class="eyebrow">AZURE CLOUD LEARNING PROJECT</p>
+      <h1>CloudTask</h1>
+      <p>Organise your work while learning cloud infrastructure.</p>
+    </header>
+
+    <section class="panel">
+      <h2>Create a task</h2>
+      <form id="task-form">
+        <label for="title">Title</label>
+        <input id="title" name="title" maxlength="160" required placeholder="e.g. Explore Azure Blob Storage">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="3" placeholder="Add a short description"></textarea>
+        <button type="submit">Add task</button>
+      </form>
+      <p id="message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <h2>Your tasks</h2>
+        <button id="refresh" class="secondary" type="button">Refresh</button>
+      </div>
+      <div id="task-list" class="task-list"></div>
+    </section>
+
+    <footer><a href="/health">Check application health</a></footer>
+  </main>
+  <script src="/static/script.js"></script>
+</body>
+</html>

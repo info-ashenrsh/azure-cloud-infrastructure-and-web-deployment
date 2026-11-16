@@ -1,0 +1,33 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  color: #17243a;
+  background: #f3f6fb;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.shell { width: min(850px, 92%); margin: 48px auto; }
+.hero { margin-bottom: 28px; }
+.eyebrow { color: #2865b8; font-size: .75rem; font-weight: 800; letter-spacing: .14em; }
+h1 { font-size: clamp(2.4rem, 7vw, 4rem); margin: 8px 0; }
+.hero p:last-child { color: #65738a; }
+.panel, .task {
+  background: white; border: 1px solid #e1e8f1; border-radius: 16px;
+  padding: 22px; box-shadow: 0 8px 28px #1d35570a;
+}
+label { display: block; margin: 14px 0 6px; font-weight: 650; }
+input, textarea {
+  width: 100%; padding: 12px; border: 1px solid #ccd6e4;
+  border-radius: 9px; font: inherit;
+}
+button {
+  border: 0; border-radius: 9px; padding: 11px 16px; margin-top: 14px;
+  background: #245db5; color: white; font-weight: 700; cursor: pointer;
+}
+button.secondary { background: #eaf0f8; color: #23436d; margin: 0; }
+.section-heading { display: flex; align-items: center; justify-content: space-between; margin: 28px 0 14px; }
+.task-list { display: grid; gap: 12px; }
+.task h3 { margin: 0 0 6px; }
+.task p, #message { color: #65738a; }
+.task-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.task-actions button { margin-top: 10px; }
+footer { margin: 30px 0; }
